@@ -12,7 +12,7 @@ window.maxsize(1200, 900)
 window.config(bg = WHITE)
 
 
-UI_frame = Frame(window, width= 900, height=300, bg=WHITE)
+UI_frame = Frame(window, width= 1200, height=600, bg=WHITE)
 UI_frame.grid(row=0, column=0, padx=10, pady=5)
 
 algo_name = StringVar()
@@ -21,7 +21,7 @@ data = []
 
 l1 = Label(UI_frame, text="Algorithm: ", bg=WHITE)
 l1.grid(row=0, column=0, padx=10, pady=5, sticky=W)
-algo_menu = ttk.Combobox(UI_frame, textvariable=algorithm_name, values=algo_list)
+algo_menu = ttk.Combobox(UI_frame, textvariable=algo_name, values=algo_list)
 algo_menu.grid(row=0, column=1, padx=5, pady=5)
 algo_menu.current(0)
 
