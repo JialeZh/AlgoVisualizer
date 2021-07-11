@@ -4,7 +4,7 @@ import random
 
 WHITE = '#FFFFFF'
 Gray = '#C4C5BF'
-
+Green = '#05F50E'
 
 window = Tk()
 window.title("Algorithms Visualizer")
@@ -42,10 +42,30 @@ def set_speed():
         return 0.005
 
 def drawData(data, colorArray):
-    pass
+    canvas.delete("all")
+    canvas_width = 1200
+    canvas_height = 600
+    x_width = canvas_width / (len(data) + 6)
+    offset = 4
+    spacing = 2
+    normalizedData = [i / max(data) for i in data]
 
+    for i, height in enumerate(normalizedData):
+        x0 = i * x_width + offset + spacing
+        y0 = canvas_height - height * 390
+        x1 = (i + 1) * x_width + offset
+        y1 = canvas_height
+        canvas.create_rectangle(x0, y0, x1, y1, fill=colorArray[i])
+    
 def generate():
-    pass
+    global data
+
+    data = []
+    for i in range(0, 100):
+        random_value = random.randint(1, 100)
+        data.append(random_value)
+
+    drawData(data, [Green for x in range(len(data))])
 
 def sort():
     pass
