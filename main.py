@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 import random
-
+from algorithms.bubbleSort import bubble
+from algorithms.mergeSort import merge
 WHITE = '#FFFFFF'
 Gray = '#C4C5BF'
 Green = '#05F50E'
@@ -60,7 +61,6 @@ def drawData(data, colorArray):
 def generate():
     global data
 
-    data = []
     for i in range(0, 100):
         random_value = random.randint(1, 100)
         data.append(random_value)
@@ -68,8 +68,15 @@ def generate():
     drawData(data, [Green for x in range(len(data))])
 
 def sort():
-    pass
-
+    global data
+    timeTick = set_speed()
+    
+    if algo_menu.get() == 'Bubble Sort':
+        bubble(data, drawData, timeTick)
+        
+    elif algo_menu.get() == 'Merge Sort':
+        merge(data, 0, len(data)-1, drawData, timeTick)
+        
 b1 = Button(UI_frame, text="Sort", command=sort, bg=Gray)
 b1.grid(row=2, column=3, padx=5, pady=5)
 
