@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from algorithms.bubbleSort import bubble
-from algorithms.mergeSort import merge
+from AlgoVisualizer.bubbleSort import bubble
+from AlgoVisualizer.mergeSort import merge
 WHITE = '#FFFFFF'
 Gray = '#C4C5BF'
 Green = '#05F50E'
