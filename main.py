@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from AlgoVisualizer.bubbleSort import bubble
-from AlgoVisualizer.mergeSort import merge
+from bubble import *
+from merge import *
 WHITE = '#FFFFFF'
 Gray = '#C4C5BF'
 Green = '#05F50E'
@@ -17,7 +17,7 @@ UI_frame = Frame(window, width= 1200, height=600, bg=WHITE)
 UI_frame.grid(row=0, column=0, padx=10, pady=5)
 
 algo_name = StringVar()
-algo_list = ['Bubble Sort']
+algo_list = ['Bubble Sort', 'Merge Sort']
 data = []
 speed_name = StringVar()
 speed_list = ['Fast', 'Normal', 'Slow']
@@ -58,6 +58,8 @@ def drawData(data, colorArray):
         y1 = canvas_height
         canvas.create_rectangle(x0, y0, x1, y1, fill=colorArray[i])
     
+    window.update_idletasks()
+
 def generate():
     global data
 
