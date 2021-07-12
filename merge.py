@@ -8,11 +8,11 @@ def mergeSort(data, start, mid, end, drawData, timeTick):
     for i in range(start, end+1):
         if a > mid:
             tempArray.append(data[b])
-            q+=1
+            b+=1
         elif b > end:
             tempArray.append(data[a])
             a+=1
-        elif data[p] < data[q]:
+        elif data[a] < data[b]:
             tempArray.append(data[a])
             a+=1
         else:
