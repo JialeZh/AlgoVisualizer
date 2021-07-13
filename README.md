@@ -1,12 +1,12 @@
 # Introduction
-> Welcome to my Algorithm Visualizer. I started this project for myself and others to conveniently visualize how various algorithm functions.
-> As I learned and practiced new algorithms, I discovered that it is crucial to understand their step-by-step process.
-> Therefore, an algorithm visualizer is great for learning and remembering how different algorithms operates
-> I hope this tool will be helpful for others that are also in the journey of learning and implementing algorithms.
+Welcome to my Algorithm Visualizer. I started this project for myself and others to conveniently visualize how various algorithm functions.
+As I learned and practiced new algorithms, I discovered that it is crucial to understand their step-by-step process.
+Therefore, an algorithm visualizer is great for learning and remembering how different algorithms operates
+I hope this tool will be helpful for others that are also in the journey of learning and implementing algorithms.
 
 ## Table of contents
 * [Introduction](#Introduction)
-* [How to use](#How to use)
+* [How to use](#How_to_use)
 * [Algorithms](#Algorithms)
 * [Releases](#Releases)
 * [Future Additions](#Future Additions)
