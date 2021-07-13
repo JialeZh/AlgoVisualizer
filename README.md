@@ -32,8 +32,7 @@ This application currently supports the following algorithms:
 -Bubble Sort
 
 ## Releases
--Implemented Quick Sort feature
-* [v2.0](https://github.com/JialeZh/AlgoVisualizer/releases/tag/2.0) -Implemented Quick Sort Algorithm and introduced new reset function to clear the generated arrays
+* [v2.0](https://github.com/JialeZh/AlgoVisualizer/releases/tag/2.0) - Implemented Quick Sort Algorithm and introduced new reset function to clear the generated arrays
 * [v1.0](https://github.com/JialeZh/AlgoVisualizer/releases/tag/v1.0) - Initial Release ( Features: Merge Sort and Bubble Sort )
 
 
