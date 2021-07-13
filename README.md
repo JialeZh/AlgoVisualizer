@@ -29,17 +29,23 @@ This application currently supports the following algorithms:
 -Bubble Sort
 
 ## Releases
+-Implemented Quick Sort feature
+* [v2.0](https://github.com/JialeZh/AlgoVisualizer/releases/tag/2.0) -Implemented Quick Sort Algorithm and introduced new reset function to clear the generated arrays
 * [v1.0](https://github.com/JialeZh/AlgoVisualizer/releases/tag/v1.0) - Initial Release ( Features: Merge Sort and Bubble Sort )
 
 
 ## Future Additions
--Add Quick Sort
+~~-Implement Quick Sort~~
 
--Add Binary Search
+-Implement Binary Search
 
--Add Breath-first Search
+-Implement Breath-first Search
 
--Add Depth-first Search
+-Implement Depth-first Search
+
+-Implement Tree Traversals
+
+-Implement Dijkstra's Algorithm
 
 -Allow custom array setup
 
