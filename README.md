@@ -27,6 +27,8 @@ I hope this tool will be helpful for others that are also in the journey of lear
 ## Algorithms
 This application currently supports the following algorithms:
 
+-Quick Sort
+
 -Merge Sort
 
 -Bubble Sort
